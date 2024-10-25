@@ -1,4 +1,4 @@
-# Scan the packages of External library from application.yml
+## Scan the packages of External JAR from application.yml
 
 ### Reference Documentation
 * Scan specific packages from External JAR 
