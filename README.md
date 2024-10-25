@@ -2,9 +2,9 @@
 
 ### Reference Documentation
 * Scan specific packages from External JAR 
-  (i.e) scan the packages which given in application.yml
+  (i.e) scan the packages which given in **application.yml**.
 
-* If no **app.basePackagesToScan** in application.yml, then scan all the packages in External JAR
+* If **NO** **app.basePackagesToScan** in application.yml, then scan all the packages in External JAR.
 
 ![](doc/images/Packages.png)
 
