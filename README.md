@@ -1,10 +1,12 @@
-## Scan the packages of External JAR from application.yml
+## Auto packages of External JAR
 
 ### Reference Documentation
-* Scan specific packages from External JAR 
+* If **NO** **app.basePackagesToScan** given in application.yml
+    , then **AUTO** scan all the packages in External JAR.
+
+* Scan specific packages of External JAR 
   (i.e) scan the packages given in **application.yml**.
 
-* If **NO** **app.basePackagesToScan** in application.yml, then scan all the packages in External JAR.
 
 ![](doc/images/Packages.png)
 
