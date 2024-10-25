@@ -1,4 +1,4 @@
-## Auto packages of External JAR
+## Auto Scan packages of External JAR
 
 
 ##### 1) Package structure
