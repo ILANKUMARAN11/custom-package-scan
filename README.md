@@ -8,12 +8,13 @@
 
 ![](doc/images/Packages.png)
 
+##### Scanning specific package by property
 ```yaml
 app:
   basePackagesToScan: net.sky.service.inventory, net.sky.service.order
 ```
 
-
+##### custom Logic to scan packages
 ```java
 @Configuration
 public class CustomScanConfig {
