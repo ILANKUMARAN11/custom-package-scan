@@ -6,6 +6,8 @@
 
 * If no **app.basePackagesToScan** in application.yml, then scan all the packages in External JAR
 
+![](doc/images/Packages.png)
+
 ```yaml
 app:
   basePackagesToScan: net.sky.service.inventory, net.sky.service.order
