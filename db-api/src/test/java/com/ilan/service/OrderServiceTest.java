@@ -22,7 +22,7 @@ class OrderServiceTest {
 	void beanCount() {
 		String[] allBeanNames = applicationContext.getBeanDefinitionNames();
 		Long beanCount = Arrays.stream(allBeanNames)
-				.filter(bean -> applicationContext.getType(bean).toString().contains("net.sky.service"))
+				.filter(bean -> applicationContext.getType(bean).getPackageName().startsWith("net.sky.service"))
 				.peek(bean -> {
 					log.info(">>>> BeanType:: {}, Bean Name :: {}" , applicationContext.getType(bean) , bean);
 				}).count();
