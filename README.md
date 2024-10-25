@@ -14,7 +14,7 @@ app:
   basePackagesToScan: net.sky.service.inventory, net.sky.service.order
 ```
 
-##### custom Logic to scan packages
+##### Custom Logic to scan packages
 ```java
 @Configuration
 public class CustomScanConfig {
