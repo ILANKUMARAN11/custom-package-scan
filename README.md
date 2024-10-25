@@ -1,22 +1,25 @@
 ## Auto packages of External JAR
 
-### Reference Documentation
-* If **NO** **app.basePackagesToScan** given in application.yml
-    , then **AUTO** scan all the packages in External JAR.
 
-* Scan specific packages of External JAR 
+##### 1) Package structure
+![Package structure](doc/images/Packages.png)
+
+> **_NOTE:_**
+> * If **NO** **app.basePackagesToScan** given in application.yml
+    , then **AUTO** scan all the packages in External JAR.
+>
+> 
+> * Scan specific packages of External JAR 
   (i.e) scan the packages given in **application.yml**.
 
 
-![](doc/images/Packages.png)
-
-##### Scanning specific package by property
+##### 2) Scanning specific package by property
 ```yaml
 app:
   basePackagesToScan: net.sky.service.inventory, net.sky.service.order
 ```
 
-##### Custom Logic to scan packages
+##### 3) Custom Logic to scan packages
 ```java
 @Configuration
 public class CustomScanConfig {
