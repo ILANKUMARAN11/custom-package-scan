@@ -1,10 +1,8 @@
 package com.ilan;
 
 import lombok.RequiredArgsConstructor;
-import org.junit.jupiter.api.Assertions;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
@@ -16,11 +14,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ActiveProfiles("dev")
 @SpringBootTest
+@RequiredArgsConstructor(onConstructor_ = @__(@Autowired))
+@Slf4j
 class CustomComponentScanTest {
 
-	private final Logger log = LoggerFactory.getLogger(getClass());
-	@Autowired
-	ApplicationContext applicationContext;
+	private final ApplicationContext applicationContext;
 
 	@Test
 	void beanCount() {
