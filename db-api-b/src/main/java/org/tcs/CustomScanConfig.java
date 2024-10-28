@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
-@ComponentScan(basePackages = "${app.basePackagesToScan:org.tcs.service}")
+@ComponentScan(basePackages = "${del.basePackagesToScan:org.tcs.service}")
 public class CustomScanConfig {
 
     @Bean
