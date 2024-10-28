@@ -1,7 +1,7 @@
-package org.tcs.alpha;
+package org.tcs.service.gamma;
 
 import org.springframework.stereotype.Service;
 
 @Service
-public class AlphaService {
+public class GammaService {
 }

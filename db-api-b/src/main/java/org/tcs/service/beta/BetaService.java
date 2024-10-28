@@ -1,4 +1,4 @@
-package org.tcs.beta;
+package org.tcs.service.beta;
 
 import org.springframework.stereotype.Service;
 

@@ -34,7 +34,7 @@ public class ComponentScanApplication implements ApplicationContextAware {
             Arrays.stream(allBeanNames)
                     .filter(bean -> applicationContext.getType(bean).toString().contains("net.sky.service"))
                     .forEach(bean -> {
-                        log.info(">>>> BeanType:: {}, Bean Name :: {}" , applicationContext.getType(bean) , bean);
+                        log.info(">>>> CommandLineRunner BeanType:: {}, Bean Name :: {}" , applicationContext.getType(bean) , bean);
                     });
 
         };
