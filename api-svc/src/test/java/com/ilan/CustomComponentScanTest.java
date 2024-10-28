@@ -29,7 +29,7 @@ class CustomComponentScanTest {
 					log.info(">>>> BeanType:: {}, Bean Name :: {}" , applicationContext.getType(bean) , bean);
 				}).count();
 
-		assertEquals(2, beanCount);
+		assertEquals(3, beanCount);
 	}
 
 }

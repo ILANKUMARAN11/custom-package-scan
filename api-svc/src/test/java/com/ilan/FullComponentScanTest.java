@@ -22,12 +22,13 @@ class FullComponentScanTest {
 	void beanCount() {
 		String[] allBeanNames = applicationContext.getBeanDefinitionNames();
 		Long beanCount = Arrays.stream(allBeanNames)
-				.filter(bean -> applicationContext.getType(bean).getPackageName().startsWith("net.sky.service"))
+				.filter(bean -> applicationContext.getType(bean).getPackageName().startsWith("net.sky.service")
+						|| applicationContext.getType(bean).toString().contains("org.tcs.service"))
 				.peek(bean -> {
 					log.info(">>>> BeanType:: {}, Bean Name :: {}" , applicationContext.getType(bean) , bean);
 				}).count();
 
-		assertEquals(3, beanCount);
+		assertEquals(6, beanCount);
 	}
 
 }
