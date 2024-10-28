@@ -4,4 +4,4 @@ spring:
 
 
 app:
-    basePackagesToScan: net.sky.service.inventory, net.sky.service.order, org.tcs.service.alpha
+    basePackagesToScan: net.sky.service.inventory, net.sky.service.order, org.tcs.service.alpha, org.tcs.service.beta
