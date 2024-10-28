@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.ilan</groupId>
-            <artifactId>db-api</artifactId>
+            <artifactId>db-api-a</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
