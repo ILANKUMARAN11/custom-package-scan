@@ -1,0 +1,2 @@
+app:
+  basePackagesToScan: org.tcs.service.alpha.inner
